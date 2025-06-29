@@ -2,6 +2,9 @@ import React, { useState } from 'react';
 import axios from 'axios';
 
 const TodoPage = () => {
+  const [itemId, setItemId] = useState('');
+  const [itemUuid, setItemUuid] = useState('');
+  const [itemHash, setItemHash] = useState('');
   const [itemName, setItemName] = useState('');
   const [itemDescription, setItemDescription] = useState('');
 
@@ -27,6 +30,21 @@ const TodoPage = () => {
         onChange={(e) => setItemId(e.target.value)}
         required
       />
+      <label>Item UUID:</label>
+      <input
+        type="text"
+        value={itemUuid}
+        onChange={(e) => setItemUuid(e.target.value)}
+        required
+      />
+      <label>Item Hash:</label>
+      <input
+        type="text"
+        value={itemHash}
+        onChange={(e) => setItemHash(e.target.value)}
+        required
+      />
+
       <label>Item Name:</label>
       <input
         type="text"
