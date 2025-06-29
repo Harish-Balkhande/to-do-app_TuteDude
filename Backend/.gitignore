@@ -1,0 +1,19 @@
+# === Node.js (backend) ===
+backend/node_modules/
+backend/.env
+backend/.env.local
+backend/.DS_Store
+backend/logs/
+backend/*.log
+
+# === IDEs ===
+.vscode/
+.idea/
+*.iml
+
+# === Misc ===
+.env
+.env.local
+*.bak
+*.old
+*.orig
