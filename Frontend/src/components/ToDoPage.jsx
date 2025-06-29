@@ -20,6 +20,13 @@ const TodoPage = () => {
 
   return (
     <form onSubmit={handleSubmit}>
+      <label>Item ID:</label>
+      <input
+        type="text"
+        value={itemId}
+        onChange={(e) => setItemId(e.target.value)}
+        required
+      />
       <label>Item Name:</label>
       <input
         type="text"
