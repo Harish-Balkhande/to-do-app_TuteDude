@@ -3,8 +3,6 @@ import axios from 'axios';
 
 const TodoPage = () => {
   const [itemId, setItemId] = useState('');
-  const [itemUuid, setItemUuid] = useState('');
-  const [itemHash, setItemHash] = useState('');
   const [itemName, setItemName] = useState('');
   const [itemDescription, setItemDescription] = useState('');
 
