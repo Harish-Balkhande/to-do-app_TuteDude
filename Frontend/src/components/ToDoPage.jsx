@@ -27,6 +27,13 @@ const TodoPage = () => {
         onChange={(e) => setItemId(e.target.value)}
         required
       />
+      <label>Item UUID:</label>
+      <input
+        type="text"
+        value={itemUuid}
+        onChange={(e) => setItemUuid(e.target.value)}
+        required
+      />
       <label>Item Name:</label>
       <input
         type="text"
